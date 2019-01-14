@@ -1,0 +1,20 @@
+version: "3"
+services:
+  dev:
+    build:
+      context: ./3rdparty/tvm/docker
+      dockerfile: ../../../docker/Dockerfile
+    tty: true
+    working_dir: /work
+    volumes:
+      - $PWD:/work
+    ports:
+      - 8889:8889
+      - 8888:8888
+      - 5000:5000
+      - 5001:5001
+      - 5002:5002
+      - 5003:5003
+      - 5004:5004
+      - 5005:5005
+      - 5006:5006
