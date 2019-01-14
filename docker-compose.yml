@@ -4,11 +4,14 @@ services:
     build:
       context: ./3rdparty/tvm/docker
       dockerfile: ../../../docker/Dockerfile
+      args:
+        TIMEZONE: Asia/Tokyo
     tty: true
     working_dir: /work
     volumes:
       - $PWD:/work
     ports:
+      - 8080:8080
       - 8889:8889
       - 8888:8888
       - 5000:5000
