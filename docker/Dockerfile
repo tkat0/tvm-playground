@@ -55,7 +55,9 @@ RUN pip3 install --no-cache-dir --upgrade setuptools pip
 
 RUN pip3 install --no-cache-dir \
     cupy-cuda90==5.1.0 \
-    chainer==5.1.0
+    chainer==5.1.0 \
+    jupyterlab \
+    matplotlib
 
 WORKDIR /work
 
