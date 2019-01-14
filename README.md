@@ -25,4 +25,7 @@ $ make tvm
 
 ## TODO
 
+- Vagrant
+    - [ ] network setting for RPC
+- [ ] add sample notebook
 - [ ] PyCharm debug configurations
