@@ -17,10 +17,21 @@ $ vagrant ssh
 ```
 
 ```bash
+# bind ./:/work
 $ cd /work
+# build Docker Image and create container
 $ docker-compose up -d dev
+# login to container
 $ docker-compose exec dev bash
+# build tvm
 $ make tvm
+```
+
+```bash
+$ python3
+>>> import tvm
+>>> import topi
+>>> import nnvm
 ```
 
 ## TODO

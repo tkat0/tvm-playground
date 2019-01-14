@@ -59,5 +59,5 @@ RUN pip3 install --no-cache-dir \
 
 WORKDIR /work
 
-ENV PYTHONPATH ${PYTHONPATH}:/work/3rdparty/tvm/python:/work/3rdparty/tvm/topi/python:/work/3rdparty/nnvm/python
-ENV JUPYTER_PATH ${PYTHONPATH}:${JUPYTER_PATH}
+ENV PYTHONPATH ${PYTHONPATH}:/work/3rdparty/tvm/python:/work/3rdparty/tvm/topi/python:/work/3rdparty/tvm/nnvm/python
+ENV JUPYTER_PATH ${JUPYTER_PATH}:${PYTHONPATH}
