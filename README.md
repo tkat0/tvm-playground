@@ -34,6 +34,11 @@ $ python3
 >>> import nnvm
 ```
 
+```bash
+$ make jupyter
+#=> 192.168.33.10:8888 (private network)
+```
+
 ## TODO
 
 - Vagrant
