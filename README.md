@@ -1,4 +1,4 @@
-# tvm-playround
+# tvm-playground
 
 ## requirements
 
