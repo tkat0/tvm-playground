@@ -50,6 +50,16 @@ Vagrant.configure("2") do |config|
 
     # Customize the amount of memory on the VM:
     vb.memory = "8192"
+    vb.cpus = 6
+
+    vb.customize [
+        "modifyvm", :id,
+        "--nestedpaging", "on",
+        "--largepages", "on",
+        "--paravirtprovider", "kvm",
+        "--ioapic", "on",
+        "--pae", "off"
+    ]
   end
 
   config.vm.provision "docker"
