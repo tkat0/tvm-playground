@@ -2,12 +2,13 @@ version: "3"
 services:
   dev:
     build:
-      context: ./3rdparty/tvm/docker
-      dockerfile: ../../../docker/Dockerfile
+      context: ./tvm/docker
+      dockerfile: ../../docker/Dockerfile
       args:
         TIMEZONE: Asia/Tokyo
     tty: true
     working_dir: /work
+    restart: always
     volumes:
       - $PWD:/work
     ports:
